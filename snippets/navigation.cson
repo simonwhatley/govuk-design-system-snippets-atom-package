@@ -1,0 +1,53 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Back link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Back link – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/back-link/'
+    'prefix': 'govuk-back-link'
+    'body': """
+    {{ govukBackLink({
+      text: "${1:Back}",
+      href: "${2:#}"
+    }) }}$3
+    """
+  'Breadcrumbs':
+    'leftLabel': 'GOV.UK'
+    'description': 'Breadcrumbs – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/breadcrumbs/'
+    'prefix': 'govuk-breadcrumbs'
+    'body': """
+    {{ govukBreadcrumbs({
+      items: [
+        ${1:Use govuk-link-item snippet}
+      ]
+    }) }}$3
+    """
+  'Footer':
+    'leftLabel': 'GOV.UK'
+    'description': 'Footer – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/footer/'
+    'prefix': 'govuk-footer'
+    'body': """
+    {{ govukFooter({}) }}$1
+    """
+  'Header':
+    'leftLabel': 'GOV.UK'
+    'description': 'Header – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/header/'
+    'prefix': 'govuk-header'
+    'body': """
+    {{ govukHeader({
+      homepageUrl: "${1:#}"
+    }) }}$2
+    """
+  'Skip link':
+    'leftLabel': 'GOV.UK'
+    'description': 'Skip link – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/skip-link/'
+    'prefix': 'govuk-skip-link'
+    'body': """
+    {{ govukSkipLink({
+      text: "Skip to main content",
+      href: "#content"
+    }) }}$1
+    """

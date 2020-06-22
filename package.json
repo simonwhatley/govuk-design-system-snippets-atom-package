@@ -1,6 +1,6 @@
 {
-  "name": "govuk-atom-snippets",
-  "description": "This package for Atom includes snippets to help build UK Government digital services.",
+  "name": "govuk-design-system-snippets",
+  "description": "GOV.UK Design System snippets for Nunjucks by Simon Whatley",
   "version": "0.0.0",
   "author": {
     "name": "Simon Whatley",

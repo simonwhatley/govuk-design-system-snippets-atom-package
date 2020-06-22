@@ -1,0 +1,154 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Headings':
+    'leftLabel': 'GOV.UK'
+    'description': 'Headings – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings'
+    'prefix': 'govuk-heading'
+    'body': """
+    <h${1:1} class="govuk-heading-${2:xl|l|m}">
+      $3
+    </h${1:1}>$4
+    """
+  'Captions':
+    'leftLabel': 'GOV.UK'
+    'description': 'Captions – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#headings-with-captions'
+    'prefix': 'govuk-caption'
+    'body': """
+    <span class="govuk-caption-${1:xl|l|m}">
+      $2
+    </span>$3
+    """
+  'Paragraph body':
+    'leftLabel': 'GOV.UK'
+    'description': 'Paragraph body – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body'
+    'prefix': 'govuk-paragraph-body'
+    'body': """
+    <p class="govuk-body">
+      $1
+    <p>$2
+    """
+  'Paragraph body small':
+    'leftLabel': 'GOV.UK'
+    'description': 'Paragraph body small – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#body-small'
+    'prefix': 'govuk-paragraph-body-small'
+    'body': """
+    <p class="govuk-body-s">
+      $1
+    <p>$2
+    """
+  'Lead paragraph':
+    'leftLabel': 'GOV.UK'
+    'description': 'Lead paragraph – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lead-paragraph'
+    'prefix': 'govuk-paragraph-lead'
+    'body': """
+    <p class="govuk-body-l">
+      $1
+    <p>$2
+      """
+  'Font size override':
+    'leftLabel': 'GOV.UK'
+    'description': 'Font size override – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-size'
+    'prefix': 'govuk-font-size'
+    'body': """
+    {# Font sizes: 80, 48, 36, 27, 24, 19, 16, 14 #}
+    <p class="govuk-body govuk-!-font-size-${1:size}">
+      $2
+    <p>$3
+    """
+  'Font weight override':
+    'leftLabel': 'GOV.UK'
+    'description': 'Font weight override – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#font-weight'
+    'prefix': 'govuk-font-weight'
+    'body': """
+    {# Font weights: regular, bold #}
+    <p class="govuk-body govuk-!-font-weight-${1:bold}">
+      $2
+    <p>$3
+    """
+  'Links':
+    'leftLabel': 'GOV.UK'
+    'description': 'Links – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#links'
+    'prefix': 'govuk-link'
+    'body': """
+    <a href="${1:#}" class="govuk-link">$2</a>$3
+    """
+  'Link item':
+    'leftLabel': 'GOV.UK'
+    'description': 'Link item – GOV.UK Design System'
+    'prefix': 'govuk-link-item'
+    'body': """
+    {
+      text: "$1",
+      href: "$2"
+    }$3
+    """
+  'Lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Lists – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#lists'
+    'prefix': 'govuk-list'
+    'body': """
+    <ul class="govuk-list">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Bulleted lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Bulleted lists – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#bulleted-lists'
+    'prefix': 'govuk-list-bulleted'
+    'body': """
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Numbered lists':
+    'leftLabel': 'GOV.UK'
+    'description': 'Numbered lists – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#numbered-lists'
+    'prefix': 'govuk-list-numbered'
+    'body': """
+    <ul class="govuk-list govuk-list--number">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Section break':
+    'leftLabel': 'GOV.UK'
+    'description': 'Section break – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/typography/#section-break'
+    'prefix': 'govuk-section-break'
+    'body': """
+    {# Size modifiers: xl, l, m #}
+    <hr class="govuk-section-break govuk-section-break--${1:size} govuk-section-break--visible">
+    """

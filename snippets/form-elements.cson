@@ -1,0 +1,286 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Address':
+    'leftLabel': 'GOV.UK'
+    'description': 'Addresses – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/addresses/'
+    'prefix': 'govuk-address'
+    'body': """
+    {% call govukFieldset({
+      legend: {
+        text: "${1:What is your address?}",
+        classes: "govuk-fieldset__legend--${2:xl}",
+        isPageHeading: ${3:true}
+      }
+    }) %}
+
+      {{ govukInput({
+        id: "address-line-1",
+        name: "address-line-1",
+        label: {
+          html: 'Building and street <span class="govuk-visually-hidden">line 1 of 2</span>'
+        },
+        autocomplete: "address-line1"
+      }) }}
+
+      {{ govukInput({
+        id: "address-line-2",
+        name: "address-line-2",
+        label: {
+          html: '<span class="govuk-visually-hidden">Building and street line 2 of 2</span>'
+        },
+        autocomplete: "address-line1"
+      }) }}
+
+      {{ govukInput({
+        id: "address-town",
+        name: "address-town",
+        label: {
+          text: "Town or city"
+        },
+        classes: "govuk-!-width-two-thirds",
+        autocomplete: "address-level2"
+      }) }}
+
+      {{ govukInput({
+        id: "address-county",
+        name: "address-county",
+        label: {
+          text: "County"
+        },
+        classes: "govuk-!-width-two-thirds"
+      }) }}
+
+      {{ govukInput({
+        id: "address-postcode",
+        name: "address-postcode",
+        label: {
+          text: "Postcode"
+        },
+        classes: "govuk-input--width-10",
+        autocomplete: "postal-code"
+      }) }}
+
+    {% endcall %}$4
+    """
+  'Button':
+    'leftLabel': 'GOV.UK'
+    'description': 'Button – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/button/'
+    'prefix': 'govuk-button'
+    'body': """
+    {{ govukButton({
+      text: "${1:Button text}"
+    }) }}$2
+    """
+  'Checkboxes':
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkboxes – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/checkboxes/'
+    'prefix': 'govuk-checkboxes'
+    'body': """
+    {{ govukCheckboxes({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "govuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use govuk-option snippet}
+      ]
+    }) }}$7
+    """
+  'Checkbox or radio option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Checkbox or radio option – GOV.UK Design System'
+    'prefix': 'govuk-option'
+    'body': """
+    {
+      value: "$1",
+      text: "$2",
+      checked: $3
+    }$4
+    """
+  'Date input':
+    'leftLabel': 'GOV.UK'
+    'description': 'Date input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/date-input/'
+    'prefix': 'govuk-date'
+    'body': """
+    {{ govukDateInput({
+      id: "${1:date}",
+      name: "${1:date}",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "govuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "${5:For example, 31 3 1980}"
+      },
+      items: [
+        {
+          name: "day"
+        },
+        {
+          name: "month"
+        },
+        {
+          name: "year"
+        }
+      ]
+    }) }}$6
+    """
+  'Error summary':
+    'leftLabel': 'GOV.UK'
+    'description': 'Error summary – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/error-summary/'
+    'prefix': 'govuk-error-summary'
+    'body': """
+    {{ govukErrorSummary({
+      titleText: "${1:There is a problem}",
+      errorList: [
+        ${2:Use govuk-link-item snippet}
+      ]
+    }) }}$3
+    """
+  'Form fieldset':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form fieldset – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/fieldset/'
+    'prefix': 'govuk-fieldset'
+    'body': """
+    {{ govukFieldset({
+      legend: {
+        text: "${1:Legend text}",
+        classes: "govuk-fieldset__legend--${2:xl|l|m}",
+        isPageHeading: ${3:true|false}
+      }
+    }) }}$4
+    """
+  'File upload':
+    'leftLabel': 'GOV.UK'
+    'description': 'File upload – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/file-upload/'
+    'prefix': 'govuk-file'
+    'body': """
+    {{ govukFileUpload({
+      id: "${1:file-upload-1}",
+      name: "${1:file-upload-1}",
+      label: {
+        text: "${2:Upload a file}"
+      }
+    }) }}$3
+    """
+  'National Insurance number (NINO)':
+    'leftLabel': 'GOV.UK'
+    'description': 'National Insurance number (NINO) – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/national-insurance-numbers/'
+    'prefix': 'govuk-nino'
+    'body': """
+    {{ govukInput({
+      id: "national-insurance-number",
+      name: "national-insurance-number",
+      label: {
+        text: "National insurance number"
+      },
+      hint: {
+        text: "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
+      },
+      classes: "govuk-input--width-10"
+    }) }}$1
+    """
+  'Radios':
+    'leftLabel': 'GOV.UK'
+    'description': 'Radios – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/radios/'
+    'prefix': 'govuk-radios'
+    'body': """
+    {{ govukRadios({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "govuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use govuk-option snippet}
+      ]
+    }) }}$7
+    """
+  'Select':
+    'leftLabel': 'GOV.UK'
+    'description': 'Select – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/select/'
+    'prefix': 'govuk-select'
+    'body': """
+    {{ govukSelect({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      items: [
+        ${3:Use govuk-option snippet}
+      ]
+    }) }}$4
+    """
+  'Select option':
+    'leftLabel': 'GOV.UK'
+    'description': 'Select option – GOV.UK Design System'
+    'prefix': 'govuk-select-option'
+    'body': """
+    {
+      value: "$1",
+      text: "$2",
+      selected: $3
+    }$4
+    """
+  'Text input':
+    'leftLabel': 'GOV.UK'
+    'description': 'Text input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/'
+    'prefix': 'govuk-input'
+    'body': """
+    {{ govukInput({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """
+  'Textarea':
+    'leftLabel': 'GOV.UK'
+    'description': 'Textarea – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/textarea/'
+    'prefix': 'govuk-textarea'
+    'body': """
+    {{ govukTextarea({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """

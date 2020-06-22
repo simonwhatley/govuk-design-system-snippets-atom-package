@@ -1,0 +1,155 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Details':
+    'leftLabel': 'GOV.UK'
+    'description': 'Details – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/details/'
+    'prefix': 'govuk-details'
+    'body': """
+    {{ govukDetails({
+      summaryText: "${1:Summary text}",
+      text: "${2:Text}"
+    }) }}$3
+    """
+  'Inset text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Inset text – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/inset-text/'
+    'prefix': 'govuk-inset-text'
+    'body': """
+    {{ govukInsetText({
+      text: "${1:Text}"
+    }) }}$2
+    """
+  'Panel':
+    'leftLabel': 'GOV.UK'
+    'description': 'Panel – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/panel/'
+    'prefix': 'govuk-panel'
+    'body': """
+    {{ govukPanel({
+      titleText: "${1:Title text}",
+      html: "Your reference number is<br><strong>$2</strong>"
+    }) }}$3
+    """
+  'Phase banner':
+    'leftLabel': 'GOV.UK'
+    'description': 'Phase banner – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/phase-banner/'
+    'prefix': 'govuk-phase-banner'
+    'body': """
+    {{ govukPhaseBanner({
+      tag: {
+        text: "${1:Alpha|Beta}"
+      },
+      html: '${2:This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.}'
+    }) }}$3
+    """
+  'Table':
+    'leftLabel': 'GOV.UK'
+    'description': 'Table – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/table/'
+    'prefix': 'govuk-table'
+    'body': """
+    {{ govukTable({
+      caption: "${1:Caption text}",
+      firstCellIsHeader: ${2:false},
+      head: [
+        {
+          text: "Column 1 heading"
+        },
+        {
+          text: "Column 2 heading"
+        }
+      ],
+      rows: [
+        [
+          {
+            text: "Row 1, column 1"
+          },
+          {
+            text: "Row 1, column 2"
+          }
+        ],
+        [
+          {
+            text: "Row 2, column 1"
+          },
+          {
+            text: "Row 2, column 2"
+          }
+        ],
+        [
+          {
+            text: "Row 3, column 1"
+          },
+          {
+            text: "Row 3, column 2"
+          }
+        ]
+      ]
+    }) }}$3
+    """
+  'Tabs':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tabs – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
+    'prefix': 'govuk-tabs'
+    'body': """
+    {{ govukTabs({
+      items: [
+        {
+          label: "${1:Tab one}",
+          id: "$2",
+          panel: {
+            html: ${3:Tab html}
+          }
+        },
+        {
+          label: "${4:Tab two}",
+          id: "$5",
+          panel: {
+            html: ${6:Tab html}
+          }
+        },
+        {
+          label: "${7:Tab three}",
+          id: "$8",
+          panel: {
+            html: ${9:Tab html}
+          }
+        }
+      ]
+    }) }}$10
+    """
+  'Tab item':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tab item – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tabs/'
+    'prefix': 'govuk-tab-item'
+    'body': """
+    {% set ${1:Tab name} %}
+    <h2 class="govuk-heading-l">${2:Tab heading}</h2>
+    $3
+    {% endset %}$4
+    """
+  'Tag':
+    'leftLabel': 'GOV.UK'
+    'description': 'Tags – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/tag/'
+    'prefix': 'govuk-tag'
+    'body': """
+    {{ govukTag({
+      text: "${1:Label text}"
+    }) }}$2
+    """
+  'Warning text':
+    'leftLabel': 'GOV.UK'
+    'description': 'Warning text – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/warning-text/'
+    'prefix': 'govuk-warning-text'
+    'body': """
+    {{ govukWarningText({
+      text: "${1:Warning text}",
+      iconFallbackText: "${2:Fallback text}"
+    }) }}$3
+    """

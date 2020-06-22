@@ -1,0 +1,122 @@
+'.text.html.basic, .text.html.nunjucks':  
+  'Form group':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form group – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/'
+    'prefix': 'govuk-form-group'
+    'body': """
+    <div class="govuk-form-group">
+      $1
+    </div>$2
+    """
+  'Form section':
+    'leftLabel': 'GOV.UK'
+    'description': 'Form section – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/'
+    'prefix': 'govuk-form-section'
+    'body': """
+    <div class="govuk-form-section">
+      $1
+    </div>$2
+    """
+  'Grid row':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid row – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/'
+    'prefix': 'govuk-grid-row'
+    'body': """
+    <div class="govuk-grid-row">
+      $1
+    </div>$2
+    """
+  'Grid column':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/'
+    'prefix': 'govuk-grid-column'
+    'body': """
+    {# Column size class suffixes: full, one-half, one-third, two-thirds, one-quarter #}
+    <div class="govuk-grid-column-${1:size}">
+      $2
+    </div>$3
+    """
+  'Grid column full':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column full width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#full-width'
+    'prefix': 'govuk-grid-column-full'
+    'body': """
+    <div class="govuk-grid-column-full">
+      $1
+    </div>$2
+    """
+  'Grid column one-half':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-half width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-half'
+    'prefix': 'govuk-grid-column-one-half'
+    'body': """
+    <div class="govuk-grid-column-one-half">
+      $1
+    </div>$2
+    """
+  'Grid column one-quarter':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-quarter width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-quarter'
+    'prefix': 'govuk-grid-column-one-quarter'
+    'body': """
+    <div class="govuk-grid-column-one-quarter">
+      $1
+    </div>$2
+    """
+  'Grid column one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column one-third width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#one-third'
+    'prefix': 'govuk-grid-column-one-third'
+    'body': """
+    <div class="govuk-grid-column-one-third">
+      $1
+    </div>$2
+    """
+  'Grid column two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Grid column two-thirds width – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds'
+    'prefix': 'govuk-grid-column-two-thirds'
+    'body': """
+    <div class="govuk-grid-column-two-thirds">
+      $1
+    </div>$2
+    """
+  'Layout one-third / two-thirds':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout one-third / two-thirds columns – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds-one-third'
+    'prefix': 'govuk-layout-one-third-two-thirds'
+    'body': """
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        $1
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        $2
+      </div>
+    </div>$3
+    """
+  'Layout two-thirds / one-third':
+    'leftLabel': 'GOV.UK'
+    'description': 'Layout two-thirds / one-third columns – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/styles/layout/#two-thirds-one-third'
+    'prefix': 'govuk-layout-two-thirds-one-third'
+    'body': """
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        $1
+      </div>
+      <div class="govuk-grid-column-one-third">
+        $2
+      </div>
+    </div>$3
+    """

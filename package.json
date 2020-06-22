@@ -1,0 +1,28 @@
+{
+  "name": "govuk-atom-snippets",
+  "description": "This package for Atom includes snippets to help build UK Government digital services.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Simon Whatley",
+    "email": "support@humanedesign.co"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonwhatley/govuk-atom-snippets-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simonwhatley/govuk-atom-snippets-package/issues"
+  },
+  "keywords": [
+    "govuk",
+    "frontend",
+    "design system",
+    "snippets"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

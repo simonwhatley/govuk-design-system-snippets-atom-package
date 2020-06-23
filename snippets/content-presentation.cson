@@ -1,4 +1,48 @@
 '.text.html.basic, .text.html.nunjucks':
+  'Accordion':
+    'leftLabel': 'GOV.UK'
+    'description': 'Accordion – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/accordion/'
+    'prefix': 'govuk-accordion'
+    'body': """
+    {{ govukAccordion({
+      id: "$1",
+      items: [
+        {
+          heading: {
+            text: "${2:Heading one}"
+          },
+          content: {
+            html: "${3:Content one HTML}"
+          }
+        },
+        {
+          heading: {
+            text: "${4:Heading two}"
+          },
+          content: {
+            html: "${5:Content two HTML}"
+          }
+        },
+        {
+          heading: {
+            text: "${6:Heading three}"
+          },
+          content: {
+            html: "${7:Content three HTML}"
+          }
+        },
+        {
+          heading: {
+            text: "${8:Heading four}"
+          },
+          content: {
+            html: "${9:Content four HTML}"
+          }
+        }
+      ]
+    }) }}$10
+    """
   'Details':
     'leftLabel': 'GOV.UK'
     'description': 'Details – GOV.UK Design System'
@@ -101,21 +145,21 @@
           label: "${1:Tab one}",
           id: "$2",
           panel: {
-            html: ${3:Tab html}
+            html: ${3:Tab one HTML}
           }
         },
         {
           label: "${4:Tab two}",
           id: "$5",
           panel: {
-            html: ${6:Tab html}
+            html: ${6:Tab two HTML}
           }
         },
         {
           label: "${7:Tab three}",
           id: "$8",
           panel: {
-            html: ${9:Tab html}
+            html: ${9:Tab three HTML}
           }
         }
       ]

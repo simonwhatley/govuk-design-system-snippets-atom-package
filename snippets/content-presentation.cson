@@ -88,6 +88,68 @@
       html: '${2:This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.}'
     }) }}$3
     """
+  'Summary list':
+    'leftLabel': 'GOV.UK'
+    'description': 'Summary list – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/summary-list/'
+    'prefix': 'govuk-summary-list'
+    'body': """
+    {{ govukSummaryList({
+      rows: [
+        {
+          key: {
+            text: "${1:Item label}"
+          },
+          value: {
+            text: "${2:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${3:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${1:Item label}"
+              }
+            ]
+          }
+        },
+        {
+          key: {
+            text: "${4:Item label}"
+          },
+          value: {
+            text: "${5:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${6:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${4:Item label}"
+              }
+            ]
+          }
+        },
+        {
+          key: {
+            text: "${7:Item label}"
+          },
+          value: {
+            text: "${8:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${9:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${7:Item label}"
+              }
+            ]
+          }
+        }
+      ]
+    }) }}
+    """
   'Table':
     'leftLabel': 'GOV.UK'
     'description': 'Table – GOV.UK Design System'

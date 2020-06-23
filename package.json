@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonwhatley/govuk-atom-snippets-package.git"
+    "url": "https://github.com/simonwhatley/govuk-design-system-snippets-atom-package.git"
   },
   "bugs": {
-    "url": "https://github.com/simonwhatley/govuk-atom-snippets-package/issues"
+    "url": "https://github.com/simonwhatley/govuk-design-system-snippets-atom-package/issues"
   },
   "keywords": [
     "govuk",

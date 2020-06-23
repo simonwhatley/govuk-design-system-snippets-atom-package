@@ -54,6 +54,7 @@ After installing the package, you will need to restart Atom.
 |Name|Shortcut|Notes|
 |-------------------------|-------------------------|---|
 |[Addresses](https://design-system.service.gov.uk/patterns/addresses/)|`govuk-address`||
+|[Bank details](https://design-system.service.gov.uk/patterns/bank-details/)|`govuk-bank-details`||
 |[Button](https://design-system.service.gov.uk/components/button/)|`govuk-button`||
 |[Checkboxes](https://design-system.service.gov.uk/components/checkboxes/)|`govuk-checkboxes`||
 |Checkbox or radio option|`govuk-option`|Use in conjunction with the `govuk-checkboxes` and `govuk-radios` Nunjucks snippets.|
@@ -72,10 +73,12 @@ After installing the package, you will need to restart Atom.
 
 |Name|Shortcut|Notes|
 |-------------------------|-------------------------|---|
+|[Accordion](https://design-system.service.gov.uk/components/accordion/)|`govuk-accordion`||
 |[Details](https://design-system.service.gov.uk/components/details/)|`govuk-details`||
 |[Inset text](https://design-system.service.gov.uk/components/inset-text/)|`govuk-inset-text`||
 |[Panels](https://design-system.service.gov.uk/components/panel/)|`govuk-panel`||
 |[Phase banner](https://design-system.service.gov.uk/components/phase-banner/)|`govuk-phase-banner`||
+|[Summary list](https://design-system.service.gov.uk/components/summary-list/)|`govuk-summary-list`||
 |[Tables](https://design-system.service.gov.uk/components/table/)|`govuk-table`||
 |[Tabs](https://design-system.service.gov.uk/components/tabs/)|`govuk-tabs`||
 |Tab item HTML|`govuk-tab-item`|Use in conjunction with the `govuk-tabs` snippet. This snippet can be used to encapsulate a tab panel.|

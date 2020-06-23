@@ -62,6 +62,82 @@
 
     {% endcall %}$4
     """
+  'Bank details':
+    'leftLabel': 'GOV.UK'
+    'description': 'Bank details – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/bank-details/'
+    'prefix': 'govuk-bank-details'
+    'body': """
+    {% call govukFieldset({
+      legend: {
+        text: "${1:What are your bank or building society account details?}",
+        classes: "govuk-fieldset__legend--${2:xl}",
+        isPageHeading: ${3:true}
+      }
+    }) %}
+
+      {{ govukInput({
+        label: {
+          text: "Name on the account"
+        },
+        id: "name-on-the-account",
+        name: "name-on-the-account",
+        attributes: {
+          spellcheck: "false"
+        }
+      }) }}
+
+      {{ govukInput({
+        label: {
+          text: "Sort code"
+        },
+        classes: "govuk-input--width-5",
+        hint: {
+          text: "Must be 6 digits long"
+        },
+        id: "sort-code",
+        name: "sort-code",
+        inputmode: "numeric",
+        pattern: "[0-9]*",
+        attributes: {
+          spellcheck: "false"
+        }
+      }) }}
+
+      {{ govukInput({
+        label: {
+          text: "Account number"
+        },
+        classes: "govuk-input--width-10",
+        hint: {
+          text: "Must be between 6 and 8 digits long"
+        },
+        id: "account-number",
+        name: "account-number",
+        inputmode: "numeric",
+        pattern: "[0-9]*",
+        attributes: {
+          spellcheck: "false"
+        }
+      }) }}
+
+      {{ govukInput({
+        label: {
+          text: "Building society roll number (if you have one)"
+        },
+        classes: "govuk-input--width-10",
+        hint: {
+          text: "You can find it on your card, statement or passbook"
+        },
+        id: "roll-number",
+        name: "roll-number",
+        attributes: {
+          spellcheck: "false"
+        }
+      }) }}
+
+    {% endcall %}
+    """
   'Button':
     'leftLabel': 'GOV.UK'
     'description': 'Button – GOV.UK Design System'

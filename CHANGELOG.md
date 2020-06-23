@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+Added summary list component snippet
+
 ## 0.2.0
 
 Added accordion component snippet

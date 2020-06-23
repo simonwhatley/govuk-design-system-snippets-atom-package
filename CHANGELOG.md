@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+Added character count component snippet
+
 ## 0.3.0
 
 Added summary list component snippet

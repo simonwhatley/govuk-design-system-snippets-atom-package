@@ -96,6 +96,24 @@
       ]
     }) }}$7
     """
+  'Character count':
+    'leftLabel': 'GOV.UK'
+    'description': 'Character count – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/character-count/'
+    'prefix': 'govuk-character-count'
+    'body': """
+    {{ govukCharacterCount({
+      name: "$1",
+      id: "$1",
+      maxlength: ${2:200},
+      label: {
+        text: "${3:Label text}"
+      },
+      hint: {
+        text: "${4:Hint text}"
+      }
+    }) }}$5
+    """
   'Checkbox or radio option':
     'leftLabel': 'GOV.UK'
     'description': 'Checkbox or radio option – GOV.UK Design System'

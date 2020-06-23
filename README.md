@@ -1,6 +1,12 @@
-# GOV.UK Design System snippets for Atom
+# GOV.UK Design System snippets for Nunjucks
 
-This package for Atom includes snippets to help build UK Government digital services.
+This Atom package includes snippets to help build UK Government digital services.
+
+## Installation
+
+Go to `Atom > Preferences > Install` and then search for `govuk design system snippets` under `Packages`.
+
+After installing the package, you will need to restart Atom.
 
 ## Available snippets
 
@@ -87,19 +93,19 @@ This package for Atom includes snippets to help build UK Government digital serv
 |[Skip link](https://design-system.service.gov.uk/components/skip-link/)|`govuk-skip-link`||
 
 ## Dependencies
-Using this extension depends on the installation of the [GOV.UK Frontend](https://www.npmjs.com/package/govuk-frontend) and [Nunjucks](https://www.npmjs.com/package/nunjucks) into your project.
+Using this package depends on the installation of the [GOV.UK Frontend](https://www.npmjs.com/package/govuk-frontend) and [Nunjucks](https://www.npmjs.com/package/nunjucks) into your project.
 
 ## Support
 This repository is maintained by Simon Whatley. If you’ve got a question or need support you can:
 
 * Email support@humanedesign.co putting the repository name in the subject line.
-* [View known issues on GitHub](https://github.com/simonwhatley/govuk-atom-snippets-package/issues).
+* [View known issues on GitHub](https://github.com/simonwhatley/govuk-design-system-snippets-atom-package/issues).
 
 ## Contributing
 If you’ve got an idea or suggestion you can:
 
 * Email contribute@humanedesign.co putting the repository name in the subject line.
-* [Create a GitHub issue](https://github.com/simonwhatley/govuk-atom-snippets-package/issues).
+* [Create a GitHub issue](https://github.com/simonwhatley/govuk-design-system-snippets-atom-package/issues).
 
 ## Licence
-Unless otherwise stated, this codebase is released under the [MIT License](https://github.com/simonwhatley/govuk-atom-snippets-package/blob/master/LICENSE). This covers both the codebase and any sample code in the documentation.
+Unless otherwise stated, this codebase is released under the [MIT License](https://github.com/simonwhatley/govuk-design-system-snippets-atom-package/blob/master/LICENSE). This covers both the codebase and any sample code in the documentation.

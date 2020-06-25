@@ -136,7 +136,7 @@
         }
       }) }}
 
-    {% endcall %}
+    {% endcall %}$4
     """
   'Button':
     'leftLabel': 'GOV.UK'
@@ -329,7 +329,7 @@
         text: "${2:Label text}"
       },
       items: [
-        ${3:Use govuk-option snippet}
+        ${3:Use govuk-select-option snippet}
       ]
     }) }}$4
     """

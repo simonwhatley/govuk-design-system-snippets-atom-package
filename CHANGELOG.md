@@ -2,11 +2,11 @@
 
 ## 0.9.0
 
-Added telephone component snippet (a dreivative of `govukInput`)
+Added telephone component snippet (a derivative of `govukInput`)
 
 ## 0.8.0
 
-Added email component snippet (a dreivative of `govukInput`)
+Added email component snippet (a derivative of `govukInput`)
 
 ## 0.7.0
 

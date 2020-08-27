@@ -233,6 +233,26 @@
       ]
     }) }}$6
     """
+  'Email address':
+    'leftLabel': 'GOV.UK'
+    'description': 'Email address – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/email-addresses/'
+    'prefix': 'govuk-email'
+    'body': """
+    {{ govukInput({
+      id: "${1:email}",
+      name: "${1:email}",
+      label: {
+        text: "${2:Email address}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      },
+      type: "email",
+      autocomplete: "email",
+      spellcheck: false
+    }) }}$3
+    """
   'Error summary':
     'leftLabel': 'GOV.UK'
     'description': 'Error summary – GOV.UK Design System'

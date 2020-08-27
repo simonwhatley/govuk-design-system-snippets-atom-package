@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.9.0
+
+Added telephone component snippet (a dreivative of `govukInput`)
+
 ## 0.8.0
 
-Added email component snippet
+Added email component snippet (a dreivative of `govukInput`)
 
 ## 0.7.0
 

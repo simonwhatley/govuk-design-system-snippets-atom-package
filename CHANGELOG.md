@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0
+
+Added email component snippet
+
+## 0.7.0
+
 ## 0.6.0
 
 Added bank details component snippet

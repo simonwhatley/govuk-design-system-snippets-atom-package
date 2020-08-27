@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.0
+
+Fix fieldset component snippet
+
 ## 0.9.0
 
 Added telephone component snippet (a derivative of `govukInput`)

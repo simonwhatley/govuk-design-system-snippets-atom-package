@@ -272,13 +272,15 @@
     'descriptionMoreURL': 'https://design-system.service.gov.uk/components/fieldset/'
     'prefix': 'govuk-fieldset'
     'body': """
-    {{ govukFieldset({
+    {% call govukFieldset({
       legend: {
         text: "${1:Legend text}",
         classes: "govuk-fieldset__legend--${2:xl|l|m}",
         isPageHeading: ${3:true|false}
       }
-    }) }}$4
+    }) %}
+    $4
+    {% endcall %}$5
     """
   'File upload':
     'leftLabel': 'GOV.UK'

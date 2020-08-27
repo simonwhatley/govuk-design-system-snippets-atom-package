@@ -364,6 +364,25 @@
       selected: $3
     }$4
     """
+  'Telephone number':
+    'leftLabel': 'GOV.UK'
+    'description': 'Telephone number – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/patterns/telephone-numbers/'
+    'prefix': 'govuk-telephone'
+    'body': """
+    {{ govukInput({
+      id: "${1:telephone}",
+      name: "${1:telephone}",
+      label: {
+        text: "${2:Telephone number}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      },
+      type: "tel",
+      autocomplete: "tel"
+    }) }}$3
+    """
   'Text input':
     'leftLabel': 'GOV.UK'
     'description': 'Text input – GOV.UK Design System'

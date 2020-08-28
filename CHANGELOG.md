@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.1
+
+Fix character count docs
+
 ## 0.10.0
 
 Fix fieldset component snippet

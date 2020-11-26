@@ -59,6 +59,7 @@ After installing the package, you will need to restart Atom.
 |[Character count](https://design-system.service.gov.uk/components/character-count/)|`govuk-character-count`||
 |[Checkboxes](https://design-system.service.gov.uk/components/checkboxes/)|`govuk-checkboxes`||
 |Checkbox or radio option|`govuk-option`|Use in conjunction with the `govuk-checkboxes` and `govuk-radios` Nunjucks snippets.|
+|[Currency input](https://design-system.service.gov.uk/components/text-input/#prefixes-and-suffixes)|`govuk-currency-input`||
 |[Dates](https://design-system.service.gov.uk/components/date-input/)|`govuk-date`||
 |[Email address](https://design-system.service.gov.uk/patterns/email-addresses/)|`govuk-email`||
 |[Error summary](https://design-system.service.gov.uk/components/error-summary/)|`govuk-error-summary`||

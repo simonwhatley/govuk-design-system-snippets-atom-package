@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.0
+
+Added currency component snippet (a derivative of `govukInput`)
+
 ## 0.10.1
 
 Fix character count docs

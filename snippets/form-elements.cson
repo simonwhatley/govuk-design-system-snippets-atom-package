@@ -201,6 +201,27 @@
       checked: $3
     }$4
     """
+  'Currency input':
+    'leftLabel': 'GOV.UK'
+    'description': 'Currency input – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/text-input/#prefixes-and-suffixes'
+    'prefix': 'govuk-currency-input'
+    'body': """
+    {{ govukInput({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      },
+      prefix: {
+        text: "${4:£}"
+      },
+      spellcheck: false
+    }) }}$5
+    """
   'Date input':
     'leftLabel': 'GOV.UK'
     'description': 'Date input – GOV.UK Design System'

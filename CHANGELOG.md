@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.12.0
+
+Added notification banner component
+
 ## 0.11.0
 
 Added currency component snippet (a derivative of `govukInput`)

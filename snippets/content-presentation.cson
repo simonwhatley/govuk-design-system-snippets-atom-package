@@ -64,6 +64,17 @@
       text: "${1:Text}"
     }) }}$2
     """
+  'Notification banner':
+    'leftLabel': 'GOV.UK'
+    'description': 'Notification banner – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/notification-banner/'
+    'prefix': 'govuk-notification-banner'
+    'body': """
+    {{ govukNotificationBanner({
+      type: "${1:success|null}",
+      text: "${2:Text}"
+    }) }}$3
+    """
   'Panel':
     'leftLabel': 'GOV.UK'
     'description': 'Panel – GOV.UK Design System'

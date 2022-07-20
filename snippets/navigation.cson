@@ -40,6 +40,53 @@
       homepageUrl: "${1:#}"
     }) }}$2
     """
+  'Pagination':
+    'leftLabel': 'GOV.UK'
+    'description': 'Pagination – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/pagination/'
+    'prefix': 'govuk-pagination'
+    'body': """
+    {{ govukPagination({
+      previous: {
+        href: "#"
+      },
+      next: {
+        href: "#"
+      },
+      items: [
+        {
+          number: 1,
+          href: "#"
+        },
+        {
+          number: 2,
+          current: true,
+          href: "#"
+        },
+        {
+          number: 3,
+          href: "#"
+        }
+      ]
+    }) }}$1
+    """
+  'Previous/next':
+    'leftLabel': 'GOV.UK'
+    'description': 'Previous/next navigation – GOV.UK Design System'
+    'descriptionMoreURL': 'https://design-system.service.gov.uk/components/pagination/'
+    'prefix': 'govuk-previous-next'
+    'body': """
+    {{ govukPagination({
+      previous: {
+        labelText: "1 of 3",
+        href: "#"
+      },
+      next: {
+        labelText: "3 of 3",
+        href: "#"
+      }
+    }) }}$1
+    """
   'Skip link':
     'leftLabel': 'GOV.UK'
     'description': 'Skip link – GOV.UK Design System'

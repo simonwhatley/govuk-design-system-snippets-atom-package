@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0
+
+Added cookie banner component
+Updated date component
+Updated address pattern
+
+## 1.0.2
+
+## 1.0.1
+
+## 1.0.0
+
+Added pagination component
+Fixed paragraph snippet
+
 ## 0.12.0
 
 Added notification banner component

@@ -230,7 +230,7 @@
     'body': """
     {{ govukDateInput({
       id: "${1:date}",
-      name: "${1:date}",
+      namePrefix: "${1:date}",
       fieldset: {
         legend: {
           text: "${2:Legend text}",
@@ -243,16 +243,25 @@
       },
       items: [
         {
-          name: "day"
+          name: "${6:day}",
+          label: "Day",
+          value: "${7:value}",
+          classes: “govuk-input--width-2"
         },
         {
-          name: "month"
+          name: "${8:month}",
+          label: "Month",
+          value: "${9:value}",
+          classes: “govuk-input--width-2"
         },
         {
-          name: "year"
+          name: "${10:year}",
+          label: "Year",
+          value: "${11:value}",
+          classes: “govuk-input--width-4"
         }
       ]
-    }) }}$6
+    }) }}$12
     """
   'Email address':
     'leftLabel': 'GOV.UK'
